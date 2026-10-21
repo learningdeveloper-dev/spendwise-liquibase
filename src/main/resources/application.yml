@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spendwise
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/init-spendwise.xml
+    default-schema: spendwise
+  datasource:
+    url: ${DB_HOST_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
